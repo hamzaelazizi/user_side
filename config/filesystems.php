@@ -55,6 +55,13 @@ return [
             'visibility' => 'public',
         ],
 
+        'out' => [
+            'driver' => 'local',
+            'root'   => 'file:///C:\Users\Lenovo\Desktop\laravel\projet\admin\storage\app\public',
+            'url' => env('APP_URL').'/out',
+            'visibility' => 'public',
+        ],
+
         's3' => [
             'driver' => 's3',
             'key' => env('AWS_ACCESS_KEY_ID'),
