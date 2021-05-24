@@ -143,9 +143,9 @@
                             <a href="#" data-bs-toggle="dropdown"
                                 class="nav-link dropdown-toggle nav-link-lg nav-link-user">
                                 <div class="avatar me-1">
-                                    <img src="assets/images/avatar/avatar-s-1.png" alt="" srcset="">
+                                    <img src="storage/Logo/{{ Auth::user()->Membre->image }}" alt="" srcset="">
                                 </div>
-                                <div class="d-none d-md-block d-lg-inline-block">Pr.</div>
+                                <div class="d-none d-md-block d-lg-inline-block">Pr. {{ Auth::user()->name }}</div>
                             </a>
                             <div class="dropdown-menu dropdown-menu-end">
                                 <a class="dropdown-item" href="#"><i data-feather="settings"></i> Changer Mot-de-Passe</a>
