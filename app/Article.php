@@ -13,4 +13,13 @@ class Article extends Model
     public function Auteurs(){
         return $this->belongsToMany(Membre::class);
     }
+    protected $fillable = [
+        'titre',
+        'date',
+        'journal',
+        'if',
+        'indexe',
+        'volume',
+        'url',
+    ];
 }

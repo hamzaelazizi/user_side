@@ -13,4 +13,10 @@ class Chapter extends Model
     public function Auteurs(){
         return $this->belongsToMany(Membre::class);
     }
+    protected $fillable = [
+        'titre',
+        'date',
+        'url',
+        'book',
+    ];
 }

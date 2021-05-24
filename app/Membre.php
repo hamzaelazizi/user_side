@@ -30,4 +30,13 @@ class Membre extends Model
     public function Ouvrages(){
         return $this->belongsToMany(Ouvrage::class);
     }
+
+    public function Doctorat(){
+        return $this->hasMany(Doctorat::class);
+    }
+
+    public function Doc_sout(){
+        return $this->hasOne(Doctorat::class, 'doctorant_id');
+    }
+
 }

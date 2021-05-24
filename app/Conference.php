@@ -13,4 +13,11 @@ class Conference extends Model
     public function Auteurs(){
         return $this->belongsToMany(Membre::class);
     }
+    protected $fillable = [
+        'titre',
+        'conference',
+        'date',
+        'Lieu',
+        'ville',
+    ];
 }

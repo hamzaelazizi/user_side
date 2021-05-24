@@ -14,6 +14,13 @@ class Manifestation extends Model
     public function Orgaexts(){
         return $this->hasMany(Orgaext::class);
     }
+    protected $fillable = [
+        'titre',
+        'date',
+        'type',
+        'lien',
+        'publisher',
+    ];
 }
 
 
